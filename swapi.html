@@ -262,13 +262,28 @@ const starNames = characters.map(function(char) {
 });
 console.log(starNames)
 
+let names = character.map(char=>char.name)
+console.log(names)
+
+//*****************************//
+let starNames = []
+characters.forEach(function(char) {
+    if (parseInt(char.mass) > 50) {
+        starNames.push({name:char.name, mass:char.mass})
+    }    
+})
+console.log(starNames)
+//***************************//
+
 const starNames = characters.map(function(char) {
-    if (`${char.mass}` > 50){
-        return `${char.name} ${parseInt(char.mass)}`;
+    if (parseInt(char.mass) > 50){
+        return {name:char.name, mass:char.mass}
     } 
 }).filter(e=>e);
 console.log(starNames)
 //could make a final variable to filter as well ---> finalOut = starNames.filter(n=>n)
+ //       return `${char.name} ${parseInt(char.mass)}`;
+
 
 const starNames = characters.map(function(char) {
     if (`${char.starships}` != []) {
