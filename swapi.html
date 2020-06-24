@@ -264,16 +264,17 @@ console.log(starNames)
 
 const starNames = characters.map(function(char) {
     if (`${char.mass}` > 50){
-        return `${char.name} ${char.mass}`;
+        return `${char.name} ${parseInt(char.mass)}`;
     } 
-});
+}).filter(e=>e);
 console.log(starNames)
+//could make a final variable to filter as well ---> finalOut = starNames.filter(n=>n)
 
 const starNames = characters.map(function(char) {
     if (`${char.starships}` != []) {
         return `${char.name} : hasStarShips`;
     }
-});
+}).filter(e=>e);
 console.log(starNames)
 
 const starNames = characters.map(function(char) {
@@ -283,7 +284,7 @@ const starNames = characters.map(function(char) {
         }    
     }
 
-});
+}).filter(e=>e);
 console.log(starNames)
 
 </script>
