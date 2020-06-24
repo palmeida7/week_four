@@ -257,18 +257,20 @@ let characters = [
         "url": "http://swapi.dev/api/people/10/"
     }
 ]
+/*perfect */
 const starNames = characters.map(function(char) {
     return char.name;
 });
 console.log(starNames)
-
+/* Good, but you didn't covert the char.mass to a number. but otherwise really close*/
 const starNames = characters.map(function(char) {
     if (`${char.mass}` > 50){
+        //return {name:char.name,mass:char.mass}
         return `${char.name} ${char.mass}`;
     } 
 });
 console.log(starNames)
-
+//really interesting way of doing this.
 const starNames = characters.map(function(char) {
     if (`${char.starships}` != []) {
         return `${char.name} : hasStarShips`;
@@ -285,7 +287,7 @@ const starNames = characters.map(function(char) {
 
 });
 console.log(starNames)
-
+/* This is really close. I really appreciate the effort! Just remember that you cannot overwrite const. 
 </script>
 </html>
 
