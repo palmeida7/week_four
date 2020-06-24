@@ -174,11 +174,38 @@ const objList = testArr =>{
 console.log(objList(['red','blue','green','orange']))
 
 `Use the array of object provided in the file "swapi.js" for the next several items.
-Create an array of only the names.
-Create an array that includes the name and mass of all charectors who mass is greater than 50.
-Make sure you check the type of the mass.
-Create an array of objects of only the characters that have at  least one starship. The objects only need 'name' and 'hasStarship' as its keys.
-create an array of names of only the charecters who have both a starship and a vehicle.`
+Create an array of only the names.`
+const starNames = characters.map(function(char) {
+    return char.name;
+});
+console.log(starNames)
 
+`Create an array that includes the name and mass of all charectors who mass is greater than 50.
+Make sure you check the type of the mass.`
+const starNames = characters.map(function(char) {
+    if (`${char.mass}` > 50){
+        return `${char.name} ${char.mass}`;
+    } 
+});
+console.log(starNames)
+
+`Create an array of objects of only the characters that have at  least one starship. The objects only need 'name' and 'hasStarship' as its keys.`
+const starNames = characters.map(function(char) {
+    if (`${char.starships}` != []) {
+        return `${char.name} : hasStarShips`;
+    }
+});
+console.log(starNames)
+
+`create an array of names of only the charecters who have both a starship and a vehicle.`
+const starNames = characters.map(function(char) {
+    if (`${char.starships}` != []) {
+        if (`${char.vehicles}` != []) {
+        return `${char.name}`
+        }    
+    }
+
+});
+console.log(starNames)
 
 </html>
