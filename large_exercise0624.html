@@ -1,0 +1,69 @@
+<html>
+    <head>
+    <title>About Me</title>
+    <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <div id="root">
+            <script>
+                const rootId = document.getElementById('root')
+                const rootText = rootId.innerText
+                rootId.innerText = 'Navigation'
+                rootId.style.fontStyle = "italic"
+                rootId.style.fontSize = "xx-large"
+                rootId.style.fontWeight = "bold"
+                let Element = document.createElement('ul')
+                let ItemOne = document.createElement('li')
+                let ItemTwo = document.createElement('li')
+                let ItemThree = document.createElement('li')
+                rootId.append(Element)
+                listElement.append(listItemOne, listItemTwo, listItemThree)
+                listItemOne.innerText = "About Me"
+                listItemTwo.innerText = "LinkedIn"
+                listItemThree.innerText = "Github"
+                
+                                    
+                let headShot = document.createElement('img')
+                headShot.className = "addedImg"
+                headShot.setAttribute('src', 'headshot.jpg')
+                rootId.appendChild(headShot)
+
+                let newDiv = document.createElement('div')
+                newDiv.className = "addedClass"
+                rootId.appendChild(newDiv)
+                let divText = newDiv.innerText
+                newDiv.innerText = "Things I Like"
+                
+                let listElement = document.createElement('ul')
+                let listItemOne = document.createElement('li')
+                let listItemTwo = document.createElement('li')
+                let listItemThree = document.createElement('li')
+
+                newDiv.append(listElement)
+                listElement.append(listItemOne, listItemTwo, listItemThree)
+                listItemOne.innerText = "Traveling"
+                listItemTwo.innerText = "Learning"
+                listItemThree.innerText = "Cooking"
+
+                let secondDiv = document.createElement('div')
+                secondDiv.className = "secondClass"
+                rootID.appendChild(secondDiv)
+                let secondText = secondDiv.innerText
+                secondDiv.innerText = "Things I Do Not Like"
+
+                let secondElement = document.createElement('ul')
+                let secondItemOne = document.createElement('li')
+                let secondItemTwo = document.createElement('li')
+                let secondItemThree = document.createElement('li')
+
+                secondDiv.append(secondElement)
+                secondElement.append(secondItemOne, secondItemTwo, secondItemThree)
+                secondItemOne.innerText = "Quarantine"
+                secondItemTwo.innerText = "Corona Virus"
+                secondItemThree.innerText = "Brussel Sprouts"
+              
+
+            </script>
+        </div>
+    </body>
+</html>
