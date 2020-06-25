@@ -1,0 +1,30 @@
+<!-- Create a button that logs "Button Pressed" to the console when clicked. --->
+
+<html>
+    <head>
+        <title>
+
+        </title>
+    </head>
+    <body>
+        <button id="add-element">Click Me</button>
+        <script>
+            const button = document.querySelector("#add-element")
+
+            button.addEventListener('click', event=>{
+                console.log("Button Pressed")
+                    
+            button.addEventListener('click', event=>{
+                if(event.button === 0) {
+                    console.log('You Left Clicked')
+                }
+            })
+
+        </script>
+    </body>
+</html>
+
+
+
+
+

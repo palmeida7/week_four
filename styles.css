@@ -51,6 +51,14 @@ body {
 }
 
 
-.secondDiv {
-    margin-left: 20px;
+.secondClass {
+    font-size: 0.8em;
+    color: blue;
+    margin-top: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font: normal;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    display: block;
 }
